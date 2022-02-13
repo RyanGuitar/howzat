@@ -2,7 +2,8 @@ let socket = "";
 let sent = {};
 
 function createSocket() {
-  socket = new WebSocket("ws://localhost:8080");
+  //socket = new WebSocket("ws://localhost:8080");
+  socket = new WebSocket("ws://howzat-chat.herokuapp.com/")
   socket.onopen = () => {
     socket.send(JSON.stringify(window.userName));
     console.log("connection made");
