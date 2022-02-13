@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+  caret-color: white !important;
+}
+body {
+  font-family: Sans-Serif;
+  margin: 0;
+  user-select: none;
+  background: rgb(20, 20, 20);
+}
+#AppContent {
+  position:relative;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+#landingBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+h1 {
+  color: white;
+  letter-spacing: 0.4rem;
+}
+p {
+  color: gray;
+}
+#formBox {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+form {
+  background: rgba(30, 30, 30);
+  width: 65%;
+  padding: 30px 15px;
+}
+#text,
+#number {
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 7px 0 7px 10px;
+  background: rgb(50, 50, 50);
+  margin: 5px 0 20px 0;
+  width: 100%;
+}
+#text:focus,
+#number:focus {
+  margin: none;
+  outline: none;
+}
+#enterChat {
+  background: rgb(50, 50, 50);
+  color: white;
+  font-size: 20px;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  width: 100%;
+  border: none;
+}
+#enterChat:disabled {
+  color: rgb(30, 30, 30);
+  background: rgb(30, 30, 30);
+}
+#warning {
+  height: 24px;
+  color: white;
+  opacity: 0.7;
+}
+#chatPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(darkback.jpg) no-repeat center fixed;
+  overflow:auto;
+}
+sub {
+  opacity: 0.7;
+}
+#buttonBox {
+  width: 10%;
+}
+#messages div:nth-child(odd) {
+  display: flex;
+  justify-content: start;
+}
+#messages div:nth-child(even) {
+  display: flex;
+  justify-content: end;
+}
+/* input box */
+#inputBox {
+  display: block;
+  margin: auto;
+  background: rgb(10, 10, 10);
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 10px;
+  height: 50px;
+  border-bottom: 5px solid rgb(10, 10, 10);
+}
+#messageText {
+  color: rgb(240, 240, 240);
+  background: rgb(40, 40, 40);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 30px 0 0 30px;
+  border: none;
+  outline: none;
+  height: 100%;
+  width: calc(100% - 100px);
+  font-size: 20px;
+  padding-left: 15px;
+}
+#messageText:focus {
+  border: none;
+  outline: none;
+}
+#uploadBox {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  padding: 12px;
+  right: 50px;
+  background: rgb(40, 40, 40);
+  border-radius: 0 30px 30px 0;
+}
+#chooseFile {
+  display: none;
+}
+#submit {
+  position: absolute;
+  right: 0;
+  aspect-ratio: 1/1;
+  height: 100%;
+  padding: 2px;
+}
+/* textBox */
+.textBox {
+  background: rgb(40, 40, 40);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+.name {
+  display: block;
+  width: auto;
+  text-align: right;
+}
+.text {
+  font-size: 19px;
+}
+#messages {
+  min-height: max-content;
+  /*height:100%;*/
+  padding: 10px;
+  padding-bottom: 100px;
+  /*margin-bottom: 100px;*/
+  overflow: auto;
+}
+/* uploadedImage */
+#messages img {
+  border-radius: 10px;
+}
+.imageBox {
+  margin: 10px 0;
+}
+.uploadedImage {
+  max-width: 100%;
+  height: auto;
+  background: rgb(40, 40, 40);
+  border: 10px solid rgb(40, 40, 40);
+}
+.hidden {
+  visibility:hidden;
+}
